@@ -1,98 +1,84 @@
 import React from "react";
-import { motion } from "motion/react";
-
-const glow = "#00ff88";
 
 const About = () => {
   return (
-    <section className="relative w-full py-28 px-6 md:px-16 overflow-hidden bg-black" >
-
-      {/* Floating Glow Blobs */}
-      <motion.div
-        className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#00ff88]/20 blur-3xl"
-        animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.7, 0.4] }}
-        transition={{ duration: 10, repeat: Infinity }}
-      />
-
-      <motion.div
-        className="absolute bottom-0 right-0 w-[28rem] h-[28rem] rounded-full bg-[#00ff88]/10 blur-3xl"
-        animate={{ scale: [1.1, 1, 1.1] }}
-        transition={{ duration: 12, repeat: Infinity }}
-      />
-
-      {/* Content */}
-      <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-
-        {/* Left – Animated Story Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="relative rounded-3xl p-10 bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl"
+    <>
+      <div className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-20 overflow-hidden">
+        <div
+          
+          initial="hidden"
+          animate="show"
+          className="max-w-6xl w-full"
         >
-          <span className="absolute -top-4 left-8 px-4 py-1 text-sm rounded-full bg-[#00ff88] text-black font-semibold shadow-md">
-            About Me
-          </span>
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+              About <span className="text-[#00ff88]">Me</span>
+            </h2>
+            <p className="mt-4 text-white/60 max-w-2xl mx-auto">
+              Developer by craft. Creator by mindset. Building digital experiences with purpose.
+            </p>
+          </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug">
-            Building ideas into{" "}
-            <span className="text-[#00ff88]">real-world products</span>
-          </h2>
-
-          <p className="mt-6 text-white/80 text-lg leading-relaxed">
-            I’m a final-year <span className="text-[#00ff88] font-medium">Computer Engineering</span> student
-            and a <span className="font-medium">MERN stack developer</span> with
-            hands-on industry experience through my internship at
-            <span className="text-[#00ff88] font-medium"> Trevita Infotech</span>.
-          </p>
-
-          <p className="mt-4 text-white/75 leading-relaxed">
-            I specialize in crafting responsive React interfaces, designing clean
-            REST APIs, and building full-stack applications using modern
-            JavaScript practices.
-          </p>
-
-          <p className="mt-4 text-white/75 leading-relaxed">
-            I enjoy turning real business requirements into scalable, maintainable
-            solutions — and I’m actively preparing for junior frontend / MERN
-            developer roles.
-          </p>
-        </motion.div>
-
-        {/* Right – Animated Personality Panel */}
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9 }}
-          className="relative flex flex-col gap-6"
-        >
-          {[
-            "Industry-driven mindset",
-            "Clean, scalable code",
-            "Frontend-focused full-stack",
-            "Strong React & API skills"
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.05, x: 6 }}
-              transition={{ type: "spring", stiffness: 200 }}
-              className="group flex items-center gap-5 p-6 rounded-2xl
-                         bg-gradient-to-r from-white/5 to-white/0
-                         border border-white/10 hover:border-[#00ff88]/60
-                         cursor-default"
+          {/* Interactive Cards */}
+          <div
+            className="grid grid-cols-1 md:grid-cols-3 gap-10"
+          >
+            {/* Card 1 */}
+            <div className="group relative bg-[#0b0b0b] border border-white/10 rounded-2xl p-8 transition-all duration-300 
+                       hover:border-[#00ff88]/40 hover:shadow-[0_0_25px_rgba(0,255,136,0.15)]"
             >
-              <div className="w-3 h-3 rounded-full bg-[#00ff88] shadow-[0_0_12px_#00ff88]" />
-              <p className="text-white/90 text-lg group-hover:text-white">
-                {item}
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-[#00ff88] transition-colors duration-300">
+                Who I Am
+              </h3>
+              <p className="text-white/60 group-hover:text-white leading-relaxed transition-colors duration-500">
+                Final-year Computer Engineering student and passionate MERN stack developer,
+                currently gaining hands-on industry experience at Trevita Infotech.
               </p>
-            </motion.div>
-          ))}
-        </motion.div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#00ff88]/10 to-transparent opacity-0 
+                            group-hover:opacity-100 transition"></div>
+            </div>
 
+            {/* Card 2 */}
+            <div className="group relative bg-[#0b0b0b] border border-white/10 rounded-2xl p-8 transition-all duration-300 
+                       hover:border-[#00ff88]/40 hover:shadow-[0_0_25px_rgba(0,255,136,0.15)]"
+            >
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-[#00ff88] transition-colors duration-300">
+                What I Do
+              </h3>
+              <p className="text-white/60 group-hover:text-white leading-relaxed transition-colors duration-500">
+                I design sleek React interfaces, build clean REST APIs, and bring full-stack
+                applications to life using modern JavaScript.
+              </p>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#00ff88]/10 to-transparent opacity-0 
+                            group-hover:opacity-100 transition"></div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group relative bg-[#0b0b0b] border border-white/10 rounded-2xl p-8 transition-all duration-300 
+                       hover:border-[#00ff88]/40 hover:shadow-[0_0_25px_rgba(0,255,136,0.15)]"
+            >
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-[#00ff88] transition-colors duration-300">
+                What Drives Me
+              </h3>
+              <p className="text-white/60 group-hover:text-white leading-relaxed transition-colors duration-500">
+                Turning real-world problems into scalable solutions. Always curious, always
+                learning, always building something meaningful.
+              </p>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#00ff88]/10 to-transparent opacity-0 
+                            group-hover:opacity-100 transition"></div>
+            </div>
+          </div>
+
+          {/* Footer Line */}
+          <div  className="mt-20 text-center">
+            <p className="text-white/40 italic text-sm hover:text-white transition-colors duration-500">
+              “Creativity in design. Precision in code. Impact in every build.”
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </>
   );
 };
 
