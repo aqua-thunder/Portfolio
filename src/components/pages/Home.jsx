@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <>
             {/* Home page */}
-            <div className="relative w-full h-[900px] sm:h-[900px] lg:h-screen overflow-hidden">
+            <section className="relative w-full h-[900px] sm:h-[900px] lg:h-screen overflow-hidden" id="home">
 
                 {/* 🔵 ANIMATED GLOW CIRCLE */}
                 <motion.div className="absolute top-36 left-[30vw] w-96 h-96 rounded-full  bg-[#00ff88]/25 blur-3xl z-0"
@@ -112,16 +112,22 @@ const Home = () => {
 
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* About Page */}
-            <About />
+            <section id="about">
+                <About />
+            </section>
 
             {/* Skills Page */}
-            <Skills />
+            <section id="work">
+                <Skills />
+            </section>
 
-            {/* Projects */}
-            <Projects />
+            <section id="projects">
+                {/* Projects */}
+                <Projects />
+            </section>
 
         </>
     );

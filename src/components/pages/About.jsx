@@ -5,7 +5,7 @@ const glow = "#00ff88";
 
 const About = () => {
   return (
-    <section className="relative w-full py-28 px-6 md:px-16 overflow-hidden bg-black">
+    <section className="relative w-full py-28 px-6 md:px-16 overflow-hidden bg-black" >
 
       {/* Floating Glow Blobs */}
       <motion.div
