@@ -2,34 +2,19 @@ import React, { useEffect, useRef, useState } from "react";
 
 const projects = [
     {
-        title: "E-Commerce Store",
-        description: "A full-stack MERN shopping platform with secure payments.",
-        image:
-            "https://i.pinimg.com/736x/5f/65/85/5f6585fcade8583556ee548866b3fbda.jpg",
+        title: "StyleKaart",
+        description: "Implemented secure authentication, modular backend architecture, and an admin panel to manage users and messages, gaining strong hands-on experience with real-world full-stack workflows.",
+        image:"../../../public/Images/Project_Images/StyleKaart.png",
     },
     {
-        title: "Admin Dashboard",
-        description: "Role-based dashboard for managing machines and drivers.",
-        image:
-            "https://i.pinimg.com/736x/09/66/35/096635424b3694288673f372828a6b06.jpg",
+        title: "Grabit",
+        description: "Developed a social media application in React with core features like posting tweets, liking content, and real-time UI updates.",
+        image:"../../../public/Images/Project_Images/Grabit.png",
     },
     {
-        title: "Portfolio Website",
-        description: "My personal brand built with React and Tailwind CSS.",
-        image:
-            "https://i.pinimg.com/736x/ae/4b/e6/ae4be6ddd54e46b21abe3853cd8ec1c9.jpg",
-    },
-    {
-        title: "Service Booking App",
-        description: "Online appointment and service booking system.",
-        image:
-            "https://i.pinimg.com/736x/e8/75/8e/e8758eee548e046f39dd077bed8f8975.jpg",
-    },
-    {
-        title: "Startup Landing Page",
-        description: "High-converting landing page with modern UI.",
-        image:
-            "https://i.pinimg.com/1200x/a4/c7/f4/a4c7f45703cccc05b7182b1d0da6f6cc.jpg",
+        title: "Tanishq",
+        description: "Built a responsive Tanishq-inspired e-commerce web app using React, Tailwind CSS, and modern CSS, focusing on clean UI and smooth navigation.",
+        image:"../../../public/Images/Project_Images/Tanishq.png",
     },
     {
 
@@ -79,10 +64,7 @@ const Projects = () => {
             </div>
 
             {/* Stack container */}
-            <div
-                ref={containerRef}
-                className="relative h-[360vh] max-w-4xl mx-auto"
-            >
+            <div ref={containerRef} className="relative h-[360vh] max-w-4xl mx-auto">
                 <div className="sticky top-24 h-[80vh] flex items-center justify-center">
                     <div className="relative w-full h-full">
 
