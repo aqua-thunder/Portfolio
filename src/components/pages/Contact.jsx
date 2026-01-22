@@ -41,7 +41,7 @@ const Contact = () => {
         <div className='mt-6 lg:mt-10 font-bold text-xl sm:text-2xl space-y-6 
         w-full text-center lg:text-left'>
 
-          <div className='text-gray-400 font-semibold text-base sm:text-lg'>
+          <div className='text-gray-400 font-semibold text-base sm:text-lg lg:text-sm'>
             GET IN TOUCH
           </div>
 

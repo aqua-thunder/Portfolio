@@ -1,6 +1,5 @@
 import React from "react";
 import AnimatedSection from "../common/AnimatedSection";
-import { AnimateSharedLayout } from "framer-motion";
 
 const About = () => {
   return (

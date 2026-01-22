@@ -7,7 +7,6 @@ import Projects from "./Projects.jsx";
 import { FaArrowDown } from "react-icons/fa6";
 import Contact from "./Contact.jsx";
 
-
 const glow = "#00ff88";
 
 const Home = () => {

@@ -23,6 +23,8 @@ const projects = [
 
 const Projects = () => {
 
+
+
     return (
         <AnimatedSection className="bg-black text-white py-24 ">
             {/* Heading */}
@@ -40,7 +42,7 @@ const Projects = () => {
                         <div className="space-y-5 last:col-span-full last:justify-self-center group">
                             <img
                                 src={item.image}
-                                className="mt-5 rounded-lg lg:w-[38vw] w-full md:w-[40vw] h-[33vw] object-cover object-left-top transform transition-transform duration-700 ease-out group-hover:scale-105"
+                                className="mt-5 rounded-lg lg:w-[38vw] w-full md:w-[40vw] lg:h-[33vw] h-[27vh] object-cover object-left-top transform transition-transform duration-700 ease-out group-hover:scale-105"
                                 alt={item.title}
                             />
                             <div className="flex items-center justify-between">
@@ -51,11 +53,12 @@ const Projects = () => {
                                     <FaArrowRightLong />
                                 </div>
                             </div>
-
                         </div>
                     );
                 })}
-            </div>
+
+            </div>        
+         
         </AnimatedSection>
     );
 };
