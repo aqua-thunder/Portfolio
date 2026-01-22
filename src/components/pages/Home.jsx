@@ -6,7 +6,6 @@ import Skills from "./Skills.jsx";
 import Projects from "./Projects.jsx";
 import { FaArrowDown } from "react-icons/fa6";
 import Contact from "./Contact.jsx";
-import AnimatedSection from "../common/AnimatedSection.jsx";
 
 
 const glow = "#00ff88";
