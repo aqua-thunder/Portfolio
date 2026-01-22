@@ -5,6 +5,8 @@ import About from "./About.jsx";
 import Skills from "./Skills.jsx";
 import Projects from "./Projects.jsx";
 import { FaArrowDown } from "react-icons/fa6";
+import Contact from "./Contact.jsx";
+import AnimatedSection from "../common/AnimatedSection.jsx";
 
 
 const glow = "#00ff88";
@@ -56,22 +58,12 @@ const Home = () => {
                                 <a
                                     href="/resume.pdf"
                                     download
-                                    className="px-8 py-3 rounded-full font-semibold text-black
-                       bg-[#00ff88] hover:bg-[#00e67a]
-                       shadow-lg shadow-[#00ff88]/30
-                       transition-all duration-300 hover:-translate-y-1 flex items-center gap-3"
-                                >
+                                    className="px-8 py-3 rounded-full font-semibold text-black bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-3">
                                     <span>Download Resume</span>
                                     <FaArrowDown />
                                 </a>
 
-                                <a
-                                    href="#contact"
-                                    className="px-8 py-3 rounded-full font-semibold
-                       border-2 border-[#00ff88] text-[#00ff88]
-                       hover:bg-[#00ff88] hover:text-black
-                       transition-all duration-300 hover:-translate-y-1"
-                                >
+                                <a href="#contact" className="px-8 py-3 rounded-full font-semibold border-2 border-[#00ff88] text-[#00ff88] hover:bg-[#00ff88] hover:text-black transition-all duration-300 hover:-translate-y-1">
                                     Let’s Chat
                                 </a>
                             </div>
@@ -124,9 +116,14 @@ const Home = () => {
                 <Skills />
             </section>
 
+            {/* Projects */}
             <section id="projects">
-                {/* Projects */}
                 <Projects />
+            </section>
+
+            {/* Projects */}
+            <section id="contact">
+                <Contact />
             </section>
 
         </>

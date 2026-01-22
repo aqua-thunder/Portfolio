@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import AnimatedSection from "../common/AnimatedSection";
 
 const projects = [
     {
@@ -23,11 +24,11 @@ const projects = [
 const Projects = () => {
 
     return (
-        <section className="bg-black text-white py-24 h-screen">
+        <AnimatedSection className="bg-black text-white py-24 ">
             {/* Heading */}
             <div className="max-w-5xl mx-auto px-6 text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                    My Featured <span className="text-[#00ff88]">Projects</span> 
+                    My Featured <span className="text-[#00ff88]">Projects</span>
                 </h2>
                 <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
                     A few things I’ve built with passion, curiosity, and lots of coffee.
@@ -39,8 +40,7 @@ const Projects = () => {
                         <div className="space-y-5 last:col-span-full last:justify-self-center group">
                             <img
                                 src={item.image}
-                                className="mt-5 rounded-lg lg:w-[40vw] w-full md:w-[40vw] h-[33vw] object-cover object-left-top transform transition-transform duration-700 ease-out
-                       group-hover:scale-105"
+                                className="mt-5 rounded-lg lg:w-[38vw] w-full md:w-[40vw] h-[33vw] object-cover object-left-top transform transition-transform duration-700 ease-out group-hover:scale-105"
                                 alt={item.title}
                             />
                             <div className="flex items-center justify-between">
@@ -56,7 +56,7 @@ const Projects = () => {
                     );
                 })}
             </div>
-        </section>
+        </AnimatedSection>
     );
 };
 

@@ -1,27 +1,28 @@
 import React from "react";
+import AnimatedSection from "../common/AnimatedSection";
+import { AnimateSharedLayout } from "framer-motion";
 
 const About = () => {
   return (
     <>
       <div className="min-h-screen bg-black text-white flex items-center justify-center px-6 py-20 overflow-hidden">
         <div
-          
           initial="hidden"
           animate="show"
           className="max-w-6xl w-full"
         >
           {/* Header */}
-          <div className="text-center mb-16">
+          <AnimatedSection className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
               About <span className="text-[#00ff88]">Me</span>
             </h2>
             <p className="mt-4 text-white/60 max-w-2xl mx-auto">
               Developer by craft. Creator by mindset. Building digital experiences with purpose.
             </p>
-          </div>
+          </AnimatedSection>
 
           {/* Interactive Cards */}
-          <div
+          <AnimatedSection
             className="grid grid-cols-1 md:grid-cols-3 gap-10"
           >
             {/* Card 1 */}
@@ -68,14 +69,14 @@ const About = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#00ff88]/10 to-transparent opacity-0 
                             group-hover:opacity-100 transition"></div>
             </div>
-          </div>
+          </AnimatedSection>
 
           {/* Footer Line */}
-          <div  className="mt-20 text-center">
+          <AnimatedSection  className="mt-20 text-center">
             <p className="text-white/40 italic text-sm hover:text-white transition-colors duration-500">
               “Creativity in design. Precision in code. Impact in every build.”
             </p>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </>

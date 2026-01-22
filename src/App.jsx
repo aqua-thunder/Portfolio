@@ -11,7 +11,20 @@ import Projects from './components/pages/Projects'
 import Navbar from './components/common/Navbar'
 import Loader from './components/common/Loader'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 function App() {
+
+   useEffect(() => {
+    AOS.init({
+      duration: 800,   // animation duration
+      once: false,       // animation only once on scroll
+      easing: 'ease-in-out',
+    })
+  }, [])
+
+
   const [count, setCount] = useState(0)
 
   const [loading, setLoading] = useState(true);
@@ -38,6 +51,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
 

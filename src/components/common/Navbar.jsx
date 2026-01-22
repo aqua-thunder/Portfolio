@@ -52,7 +52,7 @@ const Navbar = () => {
           )}
         </li>
 
-         {/* About */}
+        {/* About */}
         <li onClick={() => scrollToSection("about")} className={navItemClass("about")} >
           <BsPerson className="text-xl" />
           {active === "about" && <span className='hidden lg:block'>About</span>}
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         {/* Projects */}
         <li onClick={() => scrollToSection("projects")} className={navItemClass("projects")} >
-          <GrProjects className="text-xl" />
+          <GrProjects className="text-lg" />
           {active === "projects" && <span className='hidden lg:block'>Projects</span>}
           {active !== "projects" && (
             <span className="absolute bottom-10 px-3 py-2 rounded-full bg-black text-white text-xs font-bold opacity-0 scale-95 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none left-1/2 -translate-x-1/2">
@@ -85,11 +85,9 @@ const Navbar = () => {
           )}
         </li>
 
-       
-
         {/* Contact */}
         <li onClick={() => scrollToSection("contact")} className={navItemClass("contact")} >
-          <AiOutlineContacts className="text-xl" />
+          <AiOutlineContacts className="text-2xl" />
           {active === "contact" && <span className='hidden lg:block'>Contact</span>}
           {active !== "contact" && (
             <span className="absolute bottom-10 px-3 py-2 rounded-full bg-black text-white text-xs font-bold opacity-0 scale-95 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none left-1/2 -translate-x-1/2">

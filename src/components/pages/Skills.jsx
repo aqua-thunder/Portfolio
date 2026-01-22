@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import AnimatedSection from "../common/AnimatedSection";
 
 const glow = "#00ff88";
 
@@ -43,7 +44,7 @@ const SkillOrb = ({ skill, delay = 0 }) => (
 
 const Skills = () => {
   return (
-    <section className="relative w-full py-28 px-6 md:px-16 bg-black overflow-hidden">
+    <AnimatedSection className="relative w-full py-28 px-6 md:px-16 bg-black overflow-hidden">
 
       {/* Ambient Glow */}
       <motion.div
@@ -128,7 +129,7 @@ const Skills = () => {
 
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 };
 
