@@ -7,19 +7,19 @@ const projects = [
     {
         title: "StyleKaart",
         description: "Implemented secure authentication, modular backend architecture.",
-        image: "../../../public/Images/Project_Images/StyleKaart.png",
+        image: "/Images/Project_Images/StyleKaart.png",
         visit: "https://stylekaart.netlify.app/"
     },
     {
         title: "Grabit",
         description: "Developed a social media application in React with.",
-        image: "../../../public/Images/Project_Images/Grabit.png",
+        image: "/Images/Project_Images/Grabit.png",
         visit: "https://grabitcom.netlify.app/"
     },
     {
         title: "Tanishq",
         description: "Built a responsive Tanishq-inspired e-commerce web app.",
-        image: "../../../public/Images/Project_Images/Tanishq.png",
+        image: "/Images/Project_Images/Tanishq.png",
         visit: "https://tanisq.netlify.app/"
     },
 
