@@ -55,11 +55,11 @@ const Home = () => {
                                     href="../../../public/Ayush_Gandhi.pdf"
                                     download
                                     className="px-8 py-3 rounded-full font-semibold text-black bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-3">
-                                    <span>Download Resume</span>
+                                    <spDan>Download Resume</spDan>
                                     <FaArrowDown />
                                 </a>
 
-                                <a href="#contact" className="px-8 py-3 rounded-full font-semibold border-2 border-[#00ff88] text-[#00ff88] hover:bg-[#00ff88] hover:text-black transition-all duration-300 hover:-translate-y-1">
+                                <a href="mailto:gandhiayush291@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ayush,%0D%0A%0D%0AI%20discovered%20your%20portfolio%20and%20would%20be%20happy%20to%20get%20in%20touch%20with%20you." className="px-8 py-3 rounded-full font-semibold border-2 border-[#00ff88] text-[#00ff88] hover:bg-[#00ff88] hover:text-black transition-all duration-300 hover:-translate-y-1">
                                     Let’s Chat
                                 </a>
                             </div>
