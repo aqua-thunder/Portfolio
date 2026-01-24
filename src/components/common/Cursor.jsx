@@ -37,9 +37,8 @@ const Cursor = () => {
         // initialize position to prevent jump
         pos.current.x = window.innerWidth / 2;
         pos.current.y = window.innerHeight / 2;
-
         animate();
-
+        
         return () => window.removeEventListener("mousemove", move);
     }, []);
 

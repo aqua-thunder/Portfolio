@@ -29,8 +29,6 @@ const Home = () => {
                 />
 
                 {/* Optional second glow for depth */}
-
-
                 {/* CONTENT */}
                 <div className="absolute inset-0 flex items-center justify-center px-6 md:px-12 lg:px-24 z-10">
                     <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-14">
@@ -54,7 +52,7 @@ const Home = () => {
 
                             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                                 <a
-                                    href="/resume.pdf"
+                                    href="../../../public/Ayush_Gandhi.pdf"
                                     download
                                     className="px-8 py-3 rounded-full font-semibold text-black bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-3">
                                     <span>Download Resume</span>

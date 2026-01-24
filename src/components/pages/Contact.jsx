@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router';
 import { TbBrandLinkedin } from "react-icons/tb";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -29,7 +30,7 @@ const Contact = () => {
             className="group px-8 py-3 rounded-full font-semibold text-black 
           bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 
           transition-all duration-300 hover:-translate-y-1 hover:scale-105 
-          flex items-center justify-center gap-3 mt-8 mx-auto lg:mx-0"
+          flex items-center justify-center gap-3 mt-8 mx-auto lg:mx-0 cursor-pointer"
           >
             <span className='transition-transform duration-300 group-hover:translate-x-1'>
               Let's Chat
@@ -62,13 +63,13 @@ const Contact = () => {
           <div className='flex justify-center lg:justify-start gap-5 mt-4'>
 
             {/* LinkedIn */}
-            <div className='group border border-gray-600 rounded-2xl p-3 
+            <Link to={"https://www.linkedin.com/in/ayush-gandhi-765899287/"} target='_blank' className='group border border-gray-600 rounded-2xl p-3 
             text-2xl sm:text-3xl cursor-pointer
             transition-all duration-300 
             hover:border-[#00ff88] hover:scale-110 hover:-translate-y-1 
             hover:shadow-lg hover:shadow-[#00ff88]/30'>
               <TbBrandLinkedin className='group-hover:text-[#00ff88]' />
-            </div>
+            </Link>
 
             {/* Mail */}
             <div className='group border border-gray-600 rounded-2xl p-3 

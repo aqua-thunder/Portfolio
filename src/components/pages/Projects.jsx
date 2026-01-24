@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import { FaArrowRightLong } from "react-icons/fa6";
 import AnimatedSection from "../common/AnimatedSection";
 
@@ -7,16 +8,19 @@ const projects = [
         title: "StyleKaart",
         description: "Implemented secure authentication, modular backend architecture.",
         image: "../../../public/Images/Project_Images/StyleKaart.png",
+        visit: "https://stylekaart.netlify.app/"
     },
     {
         title: "Grabit",
         description: "Developed a social media application in React with.",
         image: "../../../public/Images/Project_Images/Grabit.png",
+        visit: "https://grabitcom.netlify.app/"
     },
     {
         title: "Tanishq",
         description: "Built a responsive Tanishq-inspired e-commerce web app.",
         image: "../../../public/Images/Project_Images/Tanishq.png",
+        visit: "https://tanisq.netlify.app/"
     },
 
 ];
@@ -39,7 +43,7 @@ const Projects = () => {
             <div className="w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
                 {projects.map((item, index) => {
                     return (
-                        <div className="space-y-5 last:col-span-full last:justify-self-center group">
+                        <Link to={item.visit} target="_blank" className="space-y-5 last:col-span-full last:justify-self-center group">
                             <img
                                 src={item.image}
                                 className="mt-5 rounded-lg lg:w-[38vw] w-full md:w-[40vw] lg:h-[33vw] h-[27vh] object-cover object-left-top transform transition-transform duration-700 ease-out group-hover:scale-105"
@@ -53,7 +57,7 @@ const Projects = () => {
                                     <FaArrowRightLong />
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
 
