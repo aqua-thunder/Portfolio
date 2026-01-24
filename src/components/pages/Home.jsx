@@ -50,16 +50,22 @@ const Home = () => {
                                 </span>
                             </p>
 
-                            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start">
                                 <a
                                     href="../../../public/Ayush_Gandhi.pdf"
                                     download
-                                    className="px-8 py-3 rounded-full font-semibold text-black bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-3">
-                                    <spDan>Download Resume</spDan>
+                                    // className="px-8 py-3 rounded-full font-semibold text-black bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 "
+
+                                    className="w-full sm:w-auto px-8 py-3 rounded-full font-semibold text-black 
+               bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 
+               transition-all duration-300 hover:-translate-y-1 
+               flex items-center justify-center gap-3"
+                                >
+                                    <span>Download Resume</span>
                                     <FaArrowDown />
                                 </a>
 
-                                <a href="mailto:gandhiayush291@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ayush,%0D%0A%0D%0AI%20discovered%20your%20portfolio%20and%20would%20be%20happy%20to%20get%20in%20touch%20with%20you." className="px-8 py-3 rounded-full font-semibold border-2 border-[#00ff88] text-[#00ff88] hover:bg-[#00ff88] hover:text-black transition-all duration-300 hover:-translate-y-1">
+                                <a href="mailto:gandhiayush291@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ayush,%0D%0A%0D%0AI%20discovered%20your%20portfolio%20and%20would%20be%20happy%20to%20get%20in%20touch%20with%20you." className="px-8 py-3 rounded-full font-semibold border-2 border-[#00ff88] text-[#00ff88] transition-all duration-300 hover:-translate-y-1 w-full justify-center lg:w-[9vw]">
                                     Let’s Chat
                                 </a>
                             </div>
@@ -87,7 +93,7 @@ const Home = () => {
 
                                         {/* Image on top */}
                                         <img
-                                            src="/Images/Profil.jpg"
+                                            src="/Images/Profile.jpg"
                                             alt="Ayush Gandhi"
                                             className="w-full h-full object-cover rounded-lg shadow-lg relative z-10"
                                         />

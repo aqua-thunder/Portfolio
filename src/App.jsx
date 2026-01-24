@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Home from './components/pages/Home.jsx'
@@ -11,12 +11,15 @@ import Projects from './components/pages/Projects'
 import Navbar from './components/common/Navbar'
 import Loader from './components/common/Loader'
 
+import { IoChatbubbleOutline } from "react-icons/io5";
+
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 function App() {
 
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 800,   // animation duration
       once: false,       // animation only once on scroll
@@ -25,7 +28,6 @@ function App() {
   }, [])
 
 
-  const [count, setCount] = useState(0)
 
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
@@ -41,7 +43,7 @@ function App() {
 
   return (
     <>
-    {loading && <Loader fadeOut={fadeOut} />}
+      {loading && <Loader fadeOut={fadeOut} />}
       <Cursor />
       <Navbar />
       <BrowserRouter>
@@ -54,6 +56,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+
+      <IoChatbubbleOutline className='bg-[#00ff88] text-5xl p-2 rounded-full fixed lg:right-10 right-5 lg:bottom-10 bottom-28 cursor-pointer hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/80 transition-all duration-300 hover:-translate-y-1 hover:scale-105 ' />
+
 
     </>
   )

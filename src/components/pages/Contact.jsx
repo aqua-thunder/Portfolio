@@ -7,8 +7,8 @@ import AnimatedSection from '../common/AnimatedSection';
 const Contact = () => {
   return (
     <>
-    <div className="line h-[1px] w-full bg-gray-700"></div>
-      <AnimatedSection className='max-w-7xl px-6 sm:px-10 lg:px-0 mx-auto py-20 lg:py-28 
+      <div className="line h-[1px] w-full bg-gray-700"></div>
+      <AnimatedSection className='max-w-7xl px-6 sm:px-10 lg:px-0 mx-auto py-28 md:py-20 lg:py-28 
       grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 text-white'>
 
         {/* Left Section */}
@@ -26,16 +26,16 @@ const Contact = () => {
           </p>
 
           {/* Animated Button */}
-          <button
+          <a
+            href="mailto:gandhiayush291@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ayush,%0D%0A%0D%0AI%20discovered%20your%20portfolio%20and%20would%20be%20happy%20to%20get%20in%20touch%20with%20you."
             className="group px-8 py-3 rounded-full font-semibold text-black 
-          bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 
-          transition-all duration-300 hover:-translate-y-1 hover:scale-105 
-          flex items-center justify-center gap-3 mt-8 mx-auto lg:mx-0 cursor-pointer"
+             bg-[#00ff88] hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/30 
+             transition-all duration-300 hover:-translate-y-1 hover:scale-105 
+             flex items-center justify-center gap-3 mt-8 mx-auto lg:mx-0 cursor-pointer lg:w-[11vw]"
           >
-            <span className='transition-transform duration-300 group-hover:translate-x-1'>
-              Let's Chat
-            </span>
-          </button>
+            <span>Let's Chat</span>
+          </a>
+
         </div>
 
         {/* Right Section */}
@@ -72,13 +72,15 @@ const Contact = () => {
             </Link>
 
             {/* Mail */}
-            <div className='group border border-gray-600 rounded-2xl p-3 
+            <a a
+              href="mailto:gandhiayush291@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ayush,%0D%0A%0D%0AI%20discovered%20your%20portfolio%20and%20would%20be%20happy%20to%20get%20in%20touch%20with%20you."
+              className='group border border-gray-600 rounded-2xl p-3 
             text-2xl sm:text-3xl cursor-pointer
             transition-all duration-300 
             hover:border-[#00ff88] hover:scale-110 hover:-translate-y-1 
             hover:shadow-lg hover:shadow-[#00ff88]/30'>
               <MdOutlineMailOutline className='group-hover:text-[#00ff88]' />
-            </div>
+            </a>
           </div>
         </div>
 
