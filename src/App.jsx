@@ -36,7 +36,7 @@ function App() {
     const timer = setTimeout(() => {
       setFadeOut(true); // start fade
       setTimeout(() => setLoading(false), 700); // remove after fade
-    }, 1200);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -57,9 +57,9 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-      <IoChatbubbleOutline className='bg-[#00ff88] text-5xl p-2 rounded-full fixed lg:right-10 right-5 lg:bottom-10 bottom-28 cursor-pointer hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/80 transition-all duration-300 hover:-translate-y-1 hover:scale-105 ' />
-
-
+      <a href="mailto:gandhiayush291@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ayush,%0D%0A%0D%0AI%20discovered%20your%20portfolio%20and%20would%20be%20happy%20to%20get%20in%20touch%20with%20you.">
+        <IoChatbubbleOutline className='bg-[#00ff88] text-5xl p-2 rounded-full fixed lg:right-10 right-5 lg:bottom-10 bottom-28 cursor-pointer hover:bg-[#00e67a] shadow-lg shadow-[#00ff88]/80 transition-all duration-300 hover:-translate-y-1 hover:scale-105 ' />
+      </a>
     </>
   )
 }

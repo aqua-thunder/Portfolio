@@ -5,6 +5,13 @@ import AnimatedSection from "../common/AnimatedSection";
 
 const projects = [
     {
+        title: "EstateFlow",
+        description: "Full-stack Real Estate SaaS for managing properties, tenants, leases, rent, maintenance.",
+        image: "/Images/Project_Images/EstateFlow.png",
+        visit: "https://estatepilot-app.netlify.app/"
+
+    },
+    {
         title: "StyleKaart",
         description: "Implemented secure authentication, modular backend architecture.",
         image: "/Images/Project_Images/StyleKaart.png",
@@ -43,17 +50,17 @@ const Projects = () => {
             <div className="w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
                 {projects.map((item, index) => {
                     return (
-                        <Link to={item.visit} target="_blank" className="space-y-5 last:col-span-full last:justify-self-center group">
+                        <Link key={index} to={item.visit} target="_blank" className="space-y-5 group">
                             <img
                                 src={item.image}
-                                className="mt-5 rounded-lg lg:w-[38vw] w-full md:w-[40vw] lg:h-[33vw] h-[27vh] object-cover object-left-top transform transition-transform duration-700 ease-out group-hover:scale-105"
+                                className="mt-5 rounded-lg w-full h-[27vh] md:h-[30vw] lg:h-[25vw] object-cover object-left-top transform transition-transform duration-700 ease-out group-hover:scale-105"
                                 alt={item.title}
                             />
-                            <div className="flex items-center justify-between">
-                                <div className="text-gray-300 text-xl font-semibold">
+                            <div className="flex items-center justify-between gap-4">
+                                <div className="text-gray-300 text-lg font-semibold">
                                     {item.description}
                                 </div>
-                                <div className="text-gray-400 border border-gray-300 px-6 p-4 rounded-full group-hover:bg-gray-200 group-hover:text-black transition-all duration-500 ease-out group-hover:scale-110 group-hover:translate-x-2 ">
+                                <div className="text-gray-400 border border-gray-300 px-6 p-4 rounded-full shrink-0 group-hover:bg-gray-200 group-hover:text-black transition-all duration-500 ease-out group-hover:scale-110 group-hover:translate-x-2">
                                     <FaArrowRightLong />
                                 </div>
                             </div>
